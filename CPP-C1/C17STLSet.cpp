@@ -1,6 +1,7 @@
 #include<iostream>
 #include<set>
 #include<unordered_set>
+#include<map>
 using namespace std;
 // NOTE - 
 /*-------A set is always sorted.-----------*/
@@ -69,9 +70,31 @@ void my_unordered_set()
     us.insert(4);
 
 }
+void my_map()
+{
+    // Remember -  A map stores only unique keys in sorted order, similar to the SET Data Structure.
+    map<int,int> mp1;
+    // In this case, the given key is 2 Integer Values.
+    // In the next case, the value is 2 Integer Values, rather than the key.
+    map<int,pair<int,int>> mp2;
+    map<pair<int,int>,int> mp3;
+ 
+    // Key - Value Pair for the MAP declared.
+    mp1[1] = 2;
+    mp1.insert({2,4});
+    mp1[3] = 5;
+    mp3.insert(std::make_pair(std::make_pair(3,3), 10));
+    for(auto it : mp1)
+    {
+        cout<<it.first<<" "<<it.second<<endl;
+
+    }
+
+}
 int main()
 {
     my_set();
     my_unordered_set();
+    my_map();
     return 0;
 }
