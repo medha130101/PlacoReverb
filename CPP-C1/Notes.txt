@@ -1,0 +1,72 @@
+-------------------------------------------------------------------Preprocessor Directives-----------------------------------------------------------------------------------
+
+1. Preprocessor Directive -> #include - Instruct the compiler before actual compilation begins. Specifically directs towards including a Header File.
+2. Preprocess the code in the Header File. For the case of #include<iostream> - 'iostream' is a header file being compiled beforehand.
+The compilation of header file, helps ease out the compilation and hence the execution of the final code.
+
+3. Other Directives - #define -  Create a symobolic constant ( Macro ) -  Replace all occurences of a macro in the source code by the defined replacement text.
+The replacement does not occupies memory and is done before the actual compilation of the entire code begins.
+
+
+---------------------------------------------------------------------Identifiers------------------------------------------------------------------------------------------
+
+1. Add an identity to an entity in the code.
+2. Identifier is used to uniquely identify a entity during compilation.
+3. Variable is an allocated memory location to hold a specific value of an entity in the memory.
+4. A 'variable' is a specific kind of 'identifier', as it holds a value by acquiring certain memory space for the value of a variable.
+
+---------------------------------------------------------------------Keywords---------------------------------------------------------------------------------------------
+
+1. Reserved , can not be used as Identifiers, i.e. as the name of a variable or the name of a function.
+2. Have a special meaning, implying a functionality for the compiler and hence must not be used, in general, as an identifier.
+3. 95 reserved words exist in CPP.
+4. auto, break, long, double, if , else, enum, struct, char, for, do, if, while, continue etc.
+5. 32 Keywords are common in C and CPP.
+6. namespace, friend, class, operator etc. as CPP is an Object-Oriented Language.
+
+---------------------------------------------------------------------Main-------------------------------------------------------------------------------------------------
+1. Return 0 , only one main() function exists and the program begins to execute by main().
+2. int main(int argc,char* argv[]) -  For a CPP code, runs through Command Line by using an Excel File as Input.
+3. main - Not a Keyword.
+4. main - Not pre-defined.
+5. Small Library Call - 'true' start point of the program.
+6. main - Is pre-declared. The instructions to execute within this code are defined later on.
+But fucntion definition and parameters are defined early on.
+
+---------------------------------------------------------------------Namespace---------------------------------------------------------------------------------------------
+
+ 1. Used to resolve naming conflicts which may arise if multiple 3rd party libraries are being used in the same program itself.
+ For eg.  A 'print()' function might be repeatedly described distinctively in different libraries.
+ 2. 'std' - Standard for CPP.
+ 3. std::cout -  Use 'cout' from the standard namespace.
+ Namespace - Registering the name of the object with this compiler.
+
+---------------------------------------------------------------------Variables---------------------------------------------------------------------------------------------
+1. Buckets to hold data and the size is variable.
+2. Variable Name, Value of Variable, Storage, Declaration, Naming Conventions , Assignment of a Value.
+3. The first character must be a variable or a _, as it can not be a number.
+4. Strongly typed Language - Declare a variable before using or initialising it.
+
+---------------------------------------------------------------------Data Types---------------------------------------------------------------------------------------------
+
+1. Primitive Data Types - 
+    a. Boolean - bool ( True or False) - 1 byte [ 8 Bits ]
+    b. Character - char ('A') - 1 byte [ 8 Bits ]
+    c. Integer Value - int - 
+    d. Floating Point - float - 
+    e. Double Floating Point - double - 
+NOTE-'float' is Less Precise whereas 'double' is more precise as it can accomodate a more count of values in decimal part of the number.
+NOTE-'float' is [ 4 bytes ] 32 BITS whereas double is [ 8 bytes ] 64 BITS in size.
+
+--------------------------------------------------------------------------Operators--------------------------------------------------------------------------------------------------------------------
+
+
+
+---------------------------------------------------------------------IMPORTANT ( Functions and Libraries )---------------------------------------------------------------------------------------------
+
+
+NOTE - Use #include<iomanip> to use setprecision(x) -  To set the precision to 'x' values after the decimal value given.
+NOTE - Use #include<cmath> to find the ceil, floor or round a number to nearest value.
+NOTE - Divide by a 'float' value, if output is a floating value whereas the inputs are genrally integers.
+
+
